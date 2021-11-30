@@ -1,5 +1,5 @@
 import React from 'react'
-
+//now that the state has been set, this is how we pass it through. 
 export default function Picker({
     animal,
     setAnimal,
@@ -10,16 +10,17 @@ export default function Picker({
     shoe,
     setShoe
 }) {
-
+//these Options will be used later in the dropdown menu so that we can set the value of the spefic item so that the image will render correctly later
     const animalOptions = ['lion', 'monkey', 'cow'];
     const shirtOptions = ['overall', 'hawaiian', 'blue']
-    const pantOptions = ['jeans', 'jogger', 'tights']
+    const pantOptions = ['jean', 'jogger', 'tight']
     const shoeOptions = ['colorful', 'slipper', 'ballet']
 
     return (
         <div>
             <label>
                 Animal:
+                {/* This will repeat for shoes, shirts, and pants. So what this is saying is that we are setting the value to the animal which we got from state, then set the animal state. then we will map through the different options which will also render in the picture depending on what value that we select.  */}
                 <select value={animal} onChange={(e) => setAnimal(e.target.value)}>
                     {animalOptions.map((picture) => (
                         <option key={picture}> {picture}</option>
