@@ -34,6 +34,22 @@ export default function Picker({
                     ))}
                 </select>
             </label>
+            <label>
+                Pants:
+                <select value={pant} onChange={(e) => setPant(e.target.value)}>
+                    {pantOptions.map((picture) => (
+                        <option key={picture}> {picture}</option>
+                    ))}
+                </select>
+            </label>
+            <label>
+                Shoes:
+                <select value={shoe} onChange={(e) => setShoe(e.target.value)}>
+                    {shoeOptions.map((picture) => (
+                        <option key={picture}> {picture}</option>
+                    ))}
+                </select>
+            </label>
         </div>
     )
 }

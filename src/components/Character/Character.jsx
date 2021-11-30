@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Character({animal, shirt}) {
+export default function Character({animal, shirt, pant, shoe}) {
     return (
         <section style={{display: 'flex', flexDirection: 'column'}}>
             <article
@@ -23,8 +23,26 @@ export default function Character({animal, shirt}) {
                 backgroundRepeat: 'no-repeat'
             }}
             ></article>
-                     
-
+               <article
+            className='pant'
+            style={{
+                backgroundImage: `url(./images/${pant}-pants.png)`,
+                height: 200,
+                width: 200,
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat'
+            }}
+            ></article>       
+            <article
+            className='shoe'
+            style={{
+                backgroundImage: `url(./images/${shoe}-shoes.png)`,
+                height: 200,
+                width: 200,
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat'
+            }}
+            ></article>
         </section>
     )
 }
