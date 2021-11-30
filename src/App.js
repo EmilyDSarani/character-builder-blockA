@@ -8,6 +8,7 @@ import Picker from './components/Picker/Picker';
 function App() {
 const [animal, setAnimal] = useState('lion');
 const [shirt, setShirt] = useState('blue');
+const [pant, setPant] = useState('jogger');
 const [shoe, setShoe] = useState('colorful');
 
   return (
@@ -18,9 +19,17 @@ const [shoe, setShoe] = useState('colorful');
         animal={animal}
         setAnimal={setAnimal}
         shirt={shirt}
-        setShirt={setShirt}/>
+        setShirt={setShirt}
+        pant={pant}
+        setPant={setPant}
+        shoe={shoe}
+        setShoe={setShoe}/>
         <Display />
-        <Character animal={animal}/>
+        <Character
+         animal={animal}
+         shirt={shirt}
+         pant={pant}
+         shoe={shoe}/>
       </header>
     </div>
   );
