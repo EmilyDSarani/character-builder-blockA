@@ -8,7 +8,11 @@ export default function Picker({
     pant,
     setPant,
     shoe,
-    setShoe
+    setShoe,
+    newCatchphrase,
+    setNewCatchphrase,
+    setCatchphrase,
+    handleClick
 }) {
 //these Options will be used later in the dropdown menu so that we can set the value of the spefic item so that the image will render correctly later
     const animalOptions = ['lion', 'monkey', 'cow'];
@@ -51,6 +55,17 @@ export default function Picker({
                     ))}
                 </select>
             </label>
+            <label>
+                What's Your Catchphrase?
+                <input
+                type='text'
+                value={newCatchphrase}
+                onChange={(e) => setNewCatchphrase(e.target.value)}
+                />
+            </label>
+            <button type='button' onClick={handleClick}>
+             Add Phrase   
+            </button>
         </div>
     )
 }

@@ -11,6 +11,12 @@ const [animal, setAnimal] = useState('lion');
 const [shirt, setShirt] = useState('blue');
 const [pant, setPant] = useState('jogger');
 const [shoe, setShoe] = useState('colorful');
+const [newCatchphrase, setNewCatchphrase] = useState('');
+const [catchphrase, setCatchphrase] = useState([]);
+
+const handleClick = () => {
+  setCatchphrase((oldState) => [...oldState, newCatchphrase]);
+};
 
   return (
     <div className="App">
@@ -25,8 +31,14 @@ const [shoe, setShoe] = useState('colorful');
         pant={pant}
         setPant={setPant}
         shoe={shoe}
-        setShoe={setShoe}/>
-        <Display />
+        setShoe={setShoe}
+        newCatchphrase={newCatchphrase}
+        setNewCatchphrase={setNewCatchphrase}
+        setCatchphrase={setCatchphrase}
+        handleClick={handleClick}/>
+        
+        <Display catchphrase={catchphrase} />
+
         <Character
          animal={animal}
          shirt={shirt}
