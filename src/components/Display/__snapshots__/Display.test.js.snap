@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render the Display 1`] = `
+<div>
+  <div>
+    <p>
+      holy hotwheels batman
+    </p>
+    <p>
+      let it goooooo
+    </p>
+    <p>
+      the lion sleeps toniiiight
+    </p>
+  </div>
+</div>
+`;

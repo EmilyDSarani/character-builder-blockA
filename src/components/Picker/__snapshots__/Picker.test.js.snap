@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render the Picker 1`] = `
+<div>
+  <div>
+    <label>
+      Animal:
+      <select>
+        <option>
+           lion
+        </option>
+        <option>
+           monkey
+        </option>
+        <option>
+           cow
+        </option>
+      </select>
+    </label>
+    <label>
+      Shirt:
+      <select>
+        <option>
+           overall
+        </option>
+        <option>
+           hawaiian
+        </option>
+        <option>
+           blue
+        </option>
+      </select>
+    </label>
+    <label>
+      Pants:
+      <select>
+        <option>
+           jean
+        </option>
+        <option>
+           jogger
+        </option>
+        <option>
+           tight
+        </option>
+      </select>
+    </label>
+    <label>
+      Shoes:
+      <select>
+        <option>
+           colorful
+        </option>
+        <option>
+           slipper
+        </option>
+        <option>
+           ballet
+        </option>
+      </select>
+    </label>
+    <label>
+      What's Your Catchphrase?
+      <input
+        type="text"
+        value=""
+      />
+    </label>
+    <button
+      type="button"
+    >
+      Add Phrase
+    </button>
+  </div>
+</div>
+`;
