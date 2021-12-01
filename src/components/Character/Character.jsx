@@ -7,6 +7,7 @@ export default function Character({animal, shirt, pant, shoe}) {
         <section style={{display: 'flex', flexDirection: 'column'}}>
             <article
             className='animal'
+            aria-label='animal'
             style={{
                 backgroundImage: `url(./images/${animal}-head.png)`,
                 height: 200,

@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render the Character 1`] = `
+<div>
+  <section
+    style="display: flex; flex-direction: column;"
+  >
+    <article
+      aria-label="animal"
+      class="animal"
+      style="background-image: url(./images/lion-head.png); height: 200px; width: 200px; background-size: cover; background-repeat: no-repeat;"
+    />
+    <article
+      class="shirt"
+      style="background-image: url(./images/undefined-shirt.png); height: 200px; width: 200px; background-size: cover; background-repeat: no-repeat;"
+    />
+    <article
+      class="pant"
+      style="background-image: url(./images/undefined-pants.png); height: 200px; width: 200px; background-size: cover; background-repeat: no-repeat;"
+    />
+    <article
+      class="shoe"
+      style="background-image: url(./images/undefined-shoes.png); height: 200px; width: 200px; background-size: cover; background-repeat: no-repeat;"
+    />
+  </section>
+</div>
+`;
